@@ -1,6 +1,6 @@
-body {/* 
-  opacity: 0.7;
-  background-image: url("design/mobile-design.jpg"); */
+body {
+  /* opacity: 0.7;
+  background-image: url("design/desktop-design.jpg"); */
   background-color: hsl(0, 0%, 90%);
 }
 * {
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   color: hsl(0, 0%, 100%);
-  margin: 22px 0 8px;
+  margin: 22px 0 16px;
 }
 
 p {
@@ -66,7 +66,7 @@ section {
   font-weight: 500;
 }
 .result > p:last-child {
-  width: 256px;
+  width: 254px;
 }
 
 .summary {
@@ -83,6 +83,7 @@ section {
   color: hsl(224, 30%, 27%);
 }
 .summary div {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,8 +96,12 @@ section {
 .summary img {
   margin-right: 14px;
 }
-.summary div p:nth-child(2) {
-  width: 188px;
+.summary div p:nth-child(2){
+  font-size: 18px;
+}
+.summary div p:last-child {
+  position: absolute;
+  right: 14px;
 }
 
 .reaction {
@@ -146,6 +151,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     min-height: 100vh;
   }
   main {
@@ -162,6 +168,9 @@ button:active {
   .result {
     border-radius: 30px;
     margin: 0;
+  }
+  .result > p:last-child {
+    width: 250px;
   }
   .summary {
     padding-inline: 38px;
