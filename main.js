@@ -11,7 +11,7 @@
         const newDiv = document.createElement("div");
         newDiv.className = segment.category.toLowerCase();
         newDiv.innerHTML = `
-          <img src=${segment.icon}>
+          <img src=${segment.icon} alt="">
           <p>${segment.category}</p>
           <p id="${segment.category.toLowerCase()}" class="miniScore">${segment.score} <span class="light-white"> / 100</span></p>
           `;
